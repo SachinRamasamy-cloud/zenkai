@@ -13,6 +13,8 @@ import Series from './pages/gen/Series';
 import Preloader from './components/Preloader';
 import Discover from './pages/search/Discover';
 import GenreView from './pages/gen/GenreView';
+import MangaDetails from './detial/MangaDetails';
+import Manga from './components/Manga';
 import Login from './pages/auth/Login';
 import Profile from './pages/auth/Profile';
 import UserList from './pages/auth/UserList';
@@ -55,6 +57,8 @@ const App = () => {
           <Route path="/movies" element={<Movies />} />
           <Route path="/genres" element={<Genres />} />
           <Route path="/series" element={<Series />} />
+          <Route path="/manga" element={<Manga />} />
+          <Route path="/manga/:id" element={<MangaDetails />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/profile" element={<Profile />} />
           

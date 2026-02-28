@@ -2,7 +2,7 @@
 
 const API_URL = 'http://localhost:5000/api/users';
 
-// --- REGISTER ---
+//REGISTER
 export const registerUser = async (userData) => {
   const response = await fetch(`${API_URL}/register`, {
     method: 'POST',
@@ -15,7 +15,7 @@ export const registerUser = async (userData) => {
   return data;
 };
 
-// --- LOGIN ---
+//LOGIN
 export const loginUser = async (userData) => {
   const response = await fetch(`${API_URL}/login`, {
     method: 'POST',

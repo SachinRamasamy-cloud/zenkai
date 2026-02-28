@@ -39,6 +39,12 @@ const Home = () => {
           endpoint="/top/anime" 
           params={{ type: 'movie', limit: 10 }} 
         />
+
+        <ContentRow
+          title="Popular Manga" 
+          endpoint="/top/manga" 
+          params={{ limit: 10 }} 
+        />
       </div>
     </>
   );

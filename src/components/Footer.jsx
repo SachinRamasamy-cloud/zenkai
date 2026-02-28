@@ -40,6 +40,7 @@ const Footer = () => {
               <FooterLink to="/" label="Home" />
               <FooterLink to="/movies" label="Top Movies" />
               <FooterLink to="/series" label="Anime Series" />
+              <FooterLink to="/manga" label="Manga" />
               <FooterLink to="/discover" label="Search Anime" />
             </ul>
           </div>
