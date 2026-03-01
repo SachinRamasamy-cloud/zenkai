@@ -69,8 +69,10 @@ const PosterSection = ({ endpoint = "/seasons/now", label = "New Season Release"
             {anime.title_english || anime.title}
           </h2>
           
-          <p className="text-gray-400 text-sm md:text-lg line-clamp-2 mb-8 font-medium max-w-xl">
-            {anime.synopsis}
+          <p className="text-gray-400 text-sm md:text-lg line-clamp-2 mb-8 font-medium max-w-2xl">
+            {anime.synopsis?.length > 150 
+              ? `${anime.synopsis.slice(0, 150)}...` 
+              : anime.synopsis}
           </p>
 
           <div className="flex flex-wrap gap-4">

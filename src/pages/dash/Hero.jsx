@@ -160,7 +160,7 @@ const Hero = () => {
 
               <motion.h1 
                 variants={itemVariants}
-                className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight mb-6 uppercase tracking-tighter"
+                className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight mb-6 uppercase tracking-tighter line-clamp-2"
               >
                 {currentAnime.title_english || currentAnime.title}
               </motion.h1>
@@ -173,9 +173,11 @@ const Hero = () => {
 
               <motion.p 
                 variants={itemVariants}
-                className="hidden sm:block text-gray-400 text-lg md:text-xl leading-relaxed mb-10 line-clamp-3 max-w-2xl font-medium"
+                className="hidden sm:block text-gray-400 text-lg md:text-xl leading-relaxed mb-10 line-clamp-2 max-w-2xl font-medium"
               >
-                {currentAnime.synopsis}
+                {currentAnime.synopsis?.length > 160 
+                  ? `${currentAnime.synopsis.slice(0, 160)}...` 
+                  : currentAnime.synopsis}
               </motion.p>
 
               <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
