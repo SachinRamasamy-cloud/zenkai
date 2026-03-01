@@ -1,6 +1,7 @@
 import React from 'react';
-import Hero from './pages/dash/hero';
+import Hero from './pages/dash/Hero';
 import ContentRow from './pages/dash/ContentRow';
+import PosterSection from './pages/dash/PosterSection';
 
 const Home = () => {
   return (
@@ -22,11 +23,15 @@ const Home = () => {
           params={{ filter: 'airing', limit: 10 }} 
         />
 
+        <PosterSection label="Airing Now" />
+
         <ContentRow 
           title="Top Upcoming" 
           endpoint="/top/anime" 
           params={{ filter: 'upcoming', limit: 10 }} 
         />
+
+        <PosterSection label="Upcoming Hype" endpoint="/top/anime" />
 
         <ContentRow
           title="All Time Favorites" 
@@ -39,6 +44,8 @@ const Home = () => {
           endpoint="/top/anime" 
           params={{ type: 'movie', limit: 10 }} 
         />
+
+        <PosterSection label="Movie Spotlight" endpoint="/top/anime" />
 
         <ContentRow
           title="Popular Manga" 

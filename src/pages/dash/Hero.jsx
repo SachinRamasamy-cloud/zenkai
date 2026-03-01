@@ -139,7 +139,7 @@ const Hero = () => {
               <div className="flex items-center gap-1.5 px-3 py-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-yellow-500">
                 <Star size={14} fill="currentColor" />
                 <span className="text-xs md:text-sm font-black">{featuredAnime.score}</span>
-              </div>
+              </div>  
             </motion.div>
 
             <motion.h1 
