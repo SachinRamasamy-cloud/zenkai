@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Heart, Clock, User, Menu, X, LogIn, LogOut } from 'lucide-react';
+import logo from '../assets/zenkai.png';
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -60,7 +61,7 @@ const Navbar = () => {
                     <Link to="/" className="flex items-center gap-3 cursor-pointer group">
                         <div className="relative w-12 h-12 flex items-center justify-center rounded-xl transform group-hover:rotate-6 transition-transform duration-300">
                             <img
-                                src="/zenkai.png"
+                                src={logo}
                                 alt="Zenkai Logo"
                                 className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
                             />

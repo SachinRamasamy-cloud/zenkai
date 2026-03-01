@@ -191,7 +191,7 @@ const Login = () => {
                 </div>
 
                 {/* Horizontal Scroll Thumbnails - Bottom */}
-                <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#08090f] via-[#08090f]/80 to-transparent z-20 flex items-end overflow-x-auto scrollbar-hide gap-3 p-4">
+                <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#08090f] via-[#08090f]/80 to-transparent z-20 flex items-end overflow-x-auto gap-3 p-4">
                     {animeList.map((anime, idx) => (
                         <motion.button
                             key={idx}
@@ -221,7 +221,7 @@ const Login = () => {
             <div 
                 ref={containerRef}
                 onMouseMove={handleMouseMove}
-                className="flex-1 h-full flex items-center justify-center p-6 md:p-12 relative overflow-y-auto scrollbar-hide bg-gradient-to-br from-[#0b0c15] via-[#0a0d1a] to-[#0b0c15]"
+                className="flex-1 h-full flex items-center justify-center p-6 md:p-12 relative overflow-y-auto bg-gradient-to-br from-[#0b0c15] via-[#0a0d1a] to-[#0b0c15]"
             >
                 {/* Mobile Background */}
                 <div className="lg:hidden absolute inset-0 z-0">

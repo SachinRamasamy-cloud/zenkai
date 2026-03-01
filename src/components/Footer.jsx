@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Twitter, Instagram, Mail, ArrowRight, Heart } from 'lucide-react';
+import logo from '../assets/zenkai.png';
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
             <Link to="/" className="flex items-center gap-3 cursor-pointer group mb-6">
               <div className="relative w-10 h-10 flex items-center justify-center rounded-xl transform group-hover:rotate-6 transition-transform duration-300">
                 <img 
-                  src="/zenkai.png" 
+                  src={logo} 
                   alt="Zenkai Logo" 
                   className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
                 />
